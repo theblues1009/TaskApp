@@ -8,7 +8,7 @@
     android:paddingBottom="16dp"
     android:paddingLeft="16dp"
     android:paddingRight="16dp"
-    android:paddingTop="16dp"
+    android:paddingTop="64dp"
     app:layout_behavior="@string/appbar_scrolling_view_behavior"
     tools:context="jp.techacademy.sayoko.kobayashi.taskapp.InputActivity"
     tools:showIn="@layout/activity_input">
@@ -19,11 +19,19 @@
         android:layout_height="wrap_content"
         android:hint="タイトル"/>
 
+
+    <EditText
+        android:id="@+id/category_edit_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/title_edit_text"
+        android:hint="カテゴリー"/>
+
     <EditText
         android:id="@+id/context_edit_text"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@id/title_edit_text"
+        android:layout_below="@+id/category_edit_text"
         android:hint="内容"/>
 
     <Button
@@ -51,7 +59,6 @@
         android:layout_height="wrap_content"
         android:layout_below="@id/times_button"
         android:layout_alignParentRight="true"
-        android:text="決定"
-        style="@style/Widget.AppCompat.Button.Borderless"/>
+        android:text="決定" />
 
 </RelativeLayout>

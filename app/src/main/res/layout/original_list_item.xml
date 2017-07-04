@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+         <SearchView
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:iconifiedByDefault="false"
+           android:id="@+id/search"
+           android:queryHint="検索カテゴリーを入力"/>
+
+    <TextView
+        android:id="@id/title_edit_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/search"
+        android:layout_alignStart="@+id/search"/>
+
+    <TextView android:id="@id/category_edit_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/title_edit_text"
+             android:layout_alignStart="@id/title_edit_text"
+           />
+
+        <TextView android:id="@id/context_edit_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/category_edit_text"
+            android:layout_alignStart="@id/category_edit_text"/>
+
+</RelativeLayout>
